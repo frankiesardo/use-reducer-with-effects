@@ -33,7 +33,7 @@ function reducerWithEffects(state, action) {
                log: "Log important information"
                http: {url: "http://server.com", method: "post", params: {count: state.count + 1}, callback: 'after-increment'}}
     case 'after-increment':
-      return (action.payload.success) ? { documentTitle: "Success" } { documentTitle: "Error!" }
+      return (action.payload.success) ? { documentTitle: "Success" } : { documentTitle: "Error!" }
     case 'decrement':
       return { state: {count: state.count - 1}
                anotherSideEffect: {dataNeededByThatSideEffect: 1} }
@@ -71,7 +71,7 @@ function App() {
 }
 ```
 
-Check the `/example` folder for a runnable prototype or visit this [sandbox](https://codesandbox.io/s/friendly-mclean-3fnlv)
+Check the `/example` folder for a runnable prototype or visit this [sandbox](https://codesandbox.io/s/use-react-with-effects-3fnlv)
 
 ## Why it does
 
