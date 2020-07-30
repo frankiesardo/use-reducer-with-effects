@@ -71,7 +71,7 @@ function App() {
 }
 ```
 
-Check the `/example` folder for a runnable prototype or visit this [sandbox](https://codesandbox.io/s/use-react-with-effects-3fnlv)
+Check the `/example` folder for a runnable prototype or visit this [sandbox](https://codesandbox.io/s/use-reducer-with-effects-3fnlv)
 
 ## Why it does
 
@@ -95,6 +95,8 @@ When you install it like this:
 ```bash
 npm install --save use-reducer-with-effects
 ```
+
+Bonus points: you can use it with [Clojurescript](https://github.com/frankiesardo/shadow-native/blob/master/src/main/example/app.cljs#L8) too!
 
 ## License
 
