@@ -73,6 +73,10 @@ function App() {
 
 Check the `/example` folder for a runnable prototype or visit this [sandbox](https://codesandbox.io/s/use-reducer-with-effects-3fnlv)
 
+## How it does
+
+Side effects objects are stored in memory and then executed by a `useEffect` that runs in the background. They are executed right after your `reducer` has finished work and they are not wrapped in an async block, so make sure your `handler` is asynchronous if the computation is expensive.
+
 ## Why it does
 
 While this is a tiny library in terms of code, it packs a big, opinionated view on how to structure a React application.
